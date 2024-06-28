@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bug Cart</title>
+<style>
+    body {
+        background-color: black;
+        color: white;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        margin: 0; /* Remove default margin */
+        padding: 0; /* Remove default padding */
+    }
+    .header {
+        padding: 20px;
+    }
+    .search-container {
+        position: relative; /* Changed to relative */
+        display: inline-block; /* Display as inline-block */
+        margin-top: 20px;
+    }
+    .search-container input[type="text"] {
+        width: 200px; /* Adjusted width */
+        padding: 8px 15px;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        outline: none;
+        font-size: 14px;
+    }
+    .search-container button {
+        background-color: red;
+        color: white;
+        padding: 8px 16px;
+        border: 2px solid red;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        outline: none;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .search-container button:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+    }
+    .search-container button span {
+        position: relative;
+        z-index: 1;
+    }
+    marquee {
+        margin: 0;
+        padding: 10px; /* Added padding */
+    }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <img height="65" src="banner.jpg" >
+    <marquee> 
+        <big> (SALE LIVE NOW) </big>
+        <b style="color: red;"> 60% OFF ON SMART WATCH ⌚</b> 
+        <big> (SALE LIVE NOW)</big>
+    </marquee>
+    <hr>
+    <div class="search-container">
+        <input type="text" placeholder="Search for products, brands and more">
+        <button><span>SEARCH</span></button>
+    </div>
+</div>
+
+</body>
+</html>
